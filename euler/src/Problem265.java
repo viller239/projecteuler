@@ -3,6 +3,8 @@ import static java.lang.System.out;
 public class Problem265 {
 
     public static void main(String[] args) {
+        // solve(3) == 52
+        // solve(5) == 209110240768
         int n = 5;
         out.println("result: " + solve(n) + " for n=" + n);
     }
