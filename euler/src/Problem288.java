@@ -15,7 +15,7 @@ public class Problem288 {
         BigInteger result = BigInteger.ZERO;
 
         BigInteger P = BigInteger.valueOf(p);
-        BigInteger PPow = BigInteger.valueOf(1);
+        BigInteger PPow = BigInteger.ONE;
         BigInteger PPowSum = BigInteger.ZERO;
 
         BigInteger S = BigInteger.valueOf(290797);
