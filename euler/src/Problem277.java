@@ -5,9 +5,10 @@ import static java.lang.System.out;
 public class Problem277 {
 
     public static void main(String[] args) {
-//        String testS = "";
-//        long testL = (long) 1e6;
-//        out.print("test S = " + testS + "  " + solve(testS, testL) + " > " + testL);
+        String testS = "DdDddUUdDD";
+        long testL = (long) 1e6;
+        out.print("test S = " + testS + "  " + solve(testS, testL) + " > " + testL);
+        // 1004064
 
 
         String S = "UDDDUdddDDUDDddDdDddDDUDDdUUDd";
