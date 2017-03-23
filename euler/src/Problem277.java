@@ -7,7 +7,7 @@ public class Problem277 {
     public static void main(String[] args) {
         String testS = "DdDddUUdDD";
         long testL = (long) 1e6;
-        out.print("test S = " + testS + "  " + solve(testS, testL) + " > " + testL);
+        out.println("test S = " + testS + " ; a1 = " + solve(testS, testL) + " > " + testL);
         // 1004064
 
 
