@@ -13,7 +13,7 @@ public class Main {
 //        euler.Problem288.main(args);
 //        euler.Problem493.main(args);
 //        euler.Problem549.main(args);
-        Problem307.main(args);
+        Problem346.main(args);
 
         out.println("calculated in:" + (System.currentTimeMillis() - startTime));
     }
