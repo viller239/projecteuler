@@ -10,6 +10,7 @@ public class Main {
 //        Problem277.main(args);
 //        Problem288.main(args);
 //        Problem493.main(args);
+        Problem549.main(args);
 
         out.println("calculated in:" + (System.currentTimeMillis() - startTime));
     }
