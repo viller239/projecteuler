@@ -1,3 +1,5 @@
+package euler;
+
 import static java.lang.System.out;
 
 public class Problem265 {

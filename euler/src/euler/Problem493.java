@@ -1,5 +1,8 @@
+package euler;
+
 import java.math.BigInteger;
 import java.util.Arrays;
+import static euler.Utils.cnk;
 
 public class Problem493 {
 
@@ -114,15 +117,6 @@ public class Problem493 {
                 .doubleValue();
 
         return Double.toString(expected / total).substring(0, 11);
-    }
-
-
-    private static BigInteger cnk(int n, int k) { //optimize
-        BigInteger result = BigInteger.ONE;
-        for (int i = 1; i <= n; i++) result = result.multiply(BigInteger.valueOf(i));
-        for (int i = 1; i <= k; i++) result = result.divide(BigInteger.valueOf(i));
-        for (int i = 1; i <= n - k; i++) result = result.divide(BigInteger.valueOf(i));
-        return result;
     }
 
 }

@@ -1,3 +1,5 @@
+package euler;
+
 import java.util.stream.LongStream;
 
 public class Problem549 {

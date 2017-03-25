@@ -1,3 +1,5 @@
+package euler;
+
 import static java.lang.System.out;
 import java.math.BigInteger;
 
