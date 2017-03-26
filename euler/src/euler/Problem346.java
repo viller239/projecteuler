@@ -1,30 +1,27 @@
 package euler;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-// GARBAGE
-public class Problem346 {
+public class Problem346 implements Problem {
 
-    public static void main(String[] args) {
+    public String solve() {
         long lim = 1_000_000_000_000L;
-        Set<Long> strongs = new HashSet<>();
+        Set<Long> strong = new HashSet<>();
 
         long base = 2;
         while (true) {
             long n = 1 + base * (base + 1);
             if (n >= lim) break;
             while (n < lim) {
-                strongs.add(n);
+                strong.add(n);
                 n = n * base + 1;
             }
             base += 1;
         }
 
-        //336108797689259275 + 1
-        System.out.println(strongs.stream().reduce(Long::sum).get() + 1);
+        //336108797689259276
+        return Long.toString(strong.stream().reduce(Long::sum).orElse(0L) + 1);
     }
 
 }

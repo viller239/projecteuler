@@ -9,7 +9,9 @@ public class Main {
 
         printSolution(new Problem216(), false);
         printSolution(new Problem265(), false);
-        printSolution(new Problem277(), true);
+        printSolution(new Problem288(), false);
+        printSolution(new Problem277(), false);
+        printSolution(new Problem346(), true);
 
         out.println("calculated in:" + (System.currentTimeMillis() - startTime));
     }

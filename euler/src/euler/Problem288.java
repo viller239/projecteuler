@@ -1,18 +1,15 @@
 package euler;
 
-import static java.lang.System.out;
 import java.math.BigInteger;
 
-public class Problem288 {
+public class Problem288 implements Problem {
 
-    public static void main(String[] args) {
-        String res = NF(3, 10_000, 20).toString();
-        out.println(res + " " + res.equals("624955285"));
-        out.println(NF(61, 10_000_000, 10).toString());
+    public String solve() {
         // 605857431263981935
-    }
+        int p = 61;
+        int q = 10_000_000;
+        int a = 10;
 
-    private static BigInteger NF(int p, int q, int a) {
         BigInteger resultMod = BigInteger.valueOf(p).pow(a);
         BigInteger result = BigInteger.ZERO;
 
@@ -33,7 +30,7 @@ public class Problem288 {
             PPow = PPow.multiply(P).mod(resultMod);
         }
 
-        return result.mod(resultMod);
+        return result.mod(resultMod).toString();
     }
 
 }
