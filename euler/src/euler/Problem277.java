@@ -2,24 +2,12 @@ package euler;
 
 import java.math.BigInteger;
 
-import static java.lang.System.out;
+public class Problem277 implements Problem{
 
-public class Problem277 {
-
-    public static void main(String[] args) {
-        String testS = "DdDddUUdDD";
-        long testL = (long) 1e6;
-        out.println("test S = " + testS + " ; a1 = " + solve(testS, testL) + " > " + testL);
-        // 1004064
-
-
+    public String solve() {
         String S = "UDDDUdddDDUDDddDdDddDDUDDdUUDd";
-        long L = (long) 1e15;
-        out.println("answer S = " + S + " ; a1 = " + solve(S, L) + " > " + L);
-        // 1125977393124310
-    }
+        long lowerBound = (long) 1e15;
 
-    private static String solve(String S, long lowerBound) {
         // an = a1 * a / b + c / b
         BigInteger big2 = BigInteger.valueOf(2);
         BigInteger big3 = BigInteger.valueOf(3);

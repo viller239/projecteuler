@@ -1,17 +1,15 @@
 package euler;
 
-import static java.lang.System.out;
+public class Problem265 implements Problem {
 
-public class Problem265 {
-
-    public static void main(String[] args) {
+    public String solve() {
         // solve(3) == 52
         // solve(5) == 209110240768
         int n = 5;
-        out.println("result: " + solve(n) + " for n=" + n);
+        return Long.toString(solve(n));
     }
 
-    static private long solve(int n) {
+    private long solve(int n) {
         int N = 1 << n;
         byte[] bytes = new byte[N];
         byte[] values = new byte[N];
@@ -19,7 +17,7 @@ public class Problem265 {
         return solve(n, 1, bytes, values);
     }
 
-    static private long solve(int n, int index, byte[] bytes, byte[] values) {
+    private long solve(int n, int index, byte[] bytes, byte[] values) {
         int N = 1 << n;
         long res = 0;
         if (index == N) {
@@ -48,6 +46,5 @@ public class Problem265 {
         }
         return res;
     }
-
 
 }
