@@ -2,11 +2,10 @@ package euler;
 
 import java.util.stream.LongStream;
 
-public class Problem549 {
+public class Problem549 implements Problem {
 
-    public static void main(String[] args) {
+    public String solve() {
         int n = 100_000_000;
-//        int n = 100;
         long[] s = new long[n + 1];
 
         for (int i = 2; i <= n; i++) {
@@ -28,10 +27,10 @@ public class Problem549 {
             }
         }
 
-        System.out.println(LongStream.of(s).sum());
+        return Long.toString(LongStream.of(s).sum());
     }
 
-    private static long magic(long p, long a) {
+    private long magic(long p, long a) {
         if (a < p) return a * p;
         long x = a;
         while (x > 0) {
@@ -42,7 +41,7 @@ public class Problem549 {
         return (x + 1) * p;
     }
 
-    private static long factor(long n, long p) {
+    private long factor(long n, long p) {
         long result = 0;
         long pp = 1;
         while (pp <= n) {
@@ -53,6 +52,3 @@ public class Problem549 {
     }
 
 }
-// n / p + n / p^2 + n / p ^ 3 ... = k
-// n = p * x
-//

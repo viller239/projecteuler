@@ -4,13 +4,9 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import static euler.Utils.cnk;
 
-public class Problem493 {
+public class Problem493 implements Problem {
 
-    public static void main(String[] args) {
-        System.out.println(solve());
-    }
-
-    private static String solve() {
+    public String solve() {
         BigInteger[] colorCounts = new BigInteger[8];
         Arrays.fill(colorCounts, BigInteger.ZERO);
 
@@ -104,8 +100,6 @@ public class Problem493 {
                 }
             }
         }
-
-        System.out.println(Arrays.toString(colorCounts));
 
         double total = cnk(70, 20).doubleValue();
         double expected = colorCounts[2].multiply(BigInteger.valueOf(2))

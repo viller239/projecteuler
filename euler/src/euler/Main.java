@@ -11,7 +11,9 @@ public class Main {
         printSolution(new Problem265(), false);
         printSolution(new Problem288(), false);
         printSolution(new Problem277(), false);
-        printSolution(new Problem346(), true);
+        printSolution(new Problem346(), false);
+        printSolution(new Problem493(), false);
+        printSolution(new Problem549(), true);
 
         out.println("calculated in:" + (System.currentTimeMillis() - startTime));
     }
