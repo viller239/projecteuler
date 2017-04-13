@@ -13,7 +13,8 @@ public class Main {
         printSolution(new Problem493(), false);
         printSolution(new Problem549(), false);
         printSolution(new Problem234(), false);
-        printSolution(new Problem303(), true);
+        printSolution(new Problem303(), false);
+        printSolution(new Problem160(), true);
 
     }
 

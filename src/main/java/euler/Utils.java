@@ -12,4 +12,28 @@ class Utils {
         return result;
     }
 
+    static long modpow(long base, long exp, long modulus) {
+        if (exp == 0) return 1;
+
+        base %= modulus;
+        long result = 1;
+        while (exp > 0) {
+           if (exp % 2 == 1) result = (result * base) % modulus;
+           base = (base * base) % modulus;
+           exp /= 2;
+        }
+
+        return result;
+    }
+
+    static long primeFactorInFactorial(long n, long p) {
+        long result = 0;
+        long pPow = p;
+        while (pPow <= n) {
+            result += n / pPow;
+            pPow *= p;
+        }
+        return result;
+    }
+
 }
