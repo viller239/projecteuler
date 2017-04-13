@@ -12,7 +12,8 @@ public class Main {
         printSolution(new Problem346(), false);
         printSolution(new Problem493(), false);
         printSolution(new Problem549(), false);
-        printSolution(new Problem234(), true);
+        printSolution(new Problem234(), false);
+        printSolution(new Problem303(), true);
 
     }
 
